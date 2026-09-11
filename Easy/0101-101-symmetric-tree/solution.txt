@@ -6,9 +6,6 @@
  * Solved: 9/12/2026
  */
 
- *         this.left = left;
- *         this.right = right;
- *     }
  * }
  */
 class Solution {
@@ -23,3 +20,5 @@ class Solution {
 
         return n1.val == n2.val && isMirror(n1.left,n2.right) && isMirror(n2.left,n1.right);
 }
+
+//
