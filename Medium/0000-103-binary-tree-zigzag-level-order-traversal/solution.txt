@@ -6,20 +6,18 @@
  * Solved: 9/12/2026
  */
 
+                q.remove();
+                res.add(node.val);
               
                 if (node.left!=null) q.add(node.left);
                 if (node.right!=null) q.add(node.right);
-                
-                
+                if (level % 2 == 0) Collections.reverse(res);
             }
-                res.add(node.val);
-                q.remove();
-                TreeNode node = q.peek();
-            for(int i=0;i<size;i++){
-            List<Integer> res = new ArrayList<>(); 
-            int size = q.size();
-        while(!q.isEmpty()){
-
+            
             ans.add(res);
+            level++;
         }
         return ans;
+    }
+    
+}
