@@ -1,0 +1,25 @@
+/* LeetCode Problem #101: 101. Symmetric Tree
+ * Difficulty: Easy
+ * Topics: Tree, Depth-First Search, Breadth-First Search, Binary Tree
+ * Language: Unknown
+ * Runtime: N/A | Memory: N/A
+ * Solved: 9/12/2026
+ */
+
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    public boolean isSymmetric(TreeNode root) {
+    }
+        return isMirror(root.left, root.right);
+
+    public boolean isMirror(TreeNode n1, TreeNode n2 ){
+        if(n1==null && n2==null) return true;
+    }
+        if(n1==null || n2==null) return false;
+
+        return n1.val == n2.val && isMirror(n1.left,n2.right) && isMirror(n2.left,n1.right);
+}
