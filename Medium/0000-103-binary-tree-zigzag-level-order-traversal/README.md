@@ -12,16 +12,6 @@
 
 ## Solution
 ```txt
-              
-                    if (node.left!=null) q.add(node.left);
-                    if (node.right!=null) q.add(node.right);
-                }
-                
-            }
-                    if (node.left!=null)q.add(node.left);
-                    if (node.right!=null) q.add(node.right);
-               
-                res.add(node.val);
                 q.remove();
                 TreeNode node = q.peek();
             for(int i=0;i<size;i++){
@@ -29,6 +19,17 @@
             int size = q.size();
         while(!q.isEmpty()){
 
+                res.add(node.val);
+              
+                if (node.left!=null) q.add(node.left);
+                if (node.right!=null) q.add(node.right);
+                
+                
+            }
+            ans.add(res);
+        }
+        return ans;
+    }
 
 ```
 
